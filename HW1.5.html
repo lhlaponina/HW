@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" >
+	<!-- Мета тег, для масштабирования страницы на телефоне -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Form</title>
+</head>
+<body>
+<!-- Создать новый веб документ. В нем создать заголовок и таблицу 5х2 с полями формы. В форме должны быть поля Name, Email, Phone, Message. Поля Message и кнопка отправки данных должны заниать ширину двух столбцов.-->
+<h1> First form</h1>
+<form action="index.html" method="get">
+<table border="2">
+	<tr>
+		<td colspan="2"> Registration</td>
+		
+	</tr>
+	<tr>
+		<td><lable for="Name">Name</lable></td>
+		<td> <input type="text" name="Name" placeholder="Name"></td>
+	</tr>
+	<tr>
+		<td><lable for="mail">Email</lable></td>
+		<td><input type="Email" name="Email" placeholder="e-mail"></td>
+	</tr>
+	<tr>
+		<td><lable for="Phone">Phone</lable></td>
+		<td><input type="Phone" name="Phone" placeholder="099-099-99-99"></td>
+	</tr>
+	<tr>
+		<td><lable for="Message">Messege</lable></td>
+		<td colspan="4"><textarea></textarea></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="submit" name="submit"></td>
+		
+	</tr>
+	<tr>
+		<td> <label for="Gender">Gender</label></td>
+		<td> Male <input type="radio" name="Gender" value="Male"/>
+		 <br>
+			Female <input type="radio" name="Gender" value="Female"/>
+		</td>
+	</tr>
+	<tr>
+		<td> <label for="checkbox"> Application For </label></td>
+		<td> news <input type="checkbox" name="checkbox"> 
+		<br>
+		     other <input type="checkbox" name="checkbox"></td>
+
+	</tr>
+	<tr>
+		<td>Your country</td>
+		<td>
+			<select name="country">
+				<option value="0" selected>Choose your country</option>
+				<option value="UA"> Ukraine</option>
+				<option value="USA">USA</option>
+				<option value="0" disabled> Magadan</option>
+			</select>
+		</td>
+	</tr>
+	
+			<input type="hidden" name="date" value="27/01/19"/>
+
+</table>
+</form>
+<br>
+<form method="post" enctype="multipart/form-data">
+		<input type="file" name="img"/>
+		<input type="submit" name="submit">
+	</form>
+
+</body>
+</html>
